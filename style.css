@@ -1,0 +1,121 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  background-color: hsl(225, 100%, 94%);
+}
+
+p {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.container {
+  max-width: 375px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+
+@media only screen and (max-width: 1440px) {
+  .container {
+    max-width: 100%;
+  }
+}
+
+.card {
+  max-width: 300px;
+  margin: 50px auto;
+  border: 1px solid grey;
+  overflow: hidden;
+  border-radius: 20px;
+  background-color: white;
+}
+
+.card__content {
+  padding: 0 20px;
+  text-align: center;
+}
+
+.card__img {
+  width: 100%;
+}
+
+.card__title {
+  margin-top: 20px;
+}
+
+.card__desc {
+  margin-top: 20px;
+  line-height: 1.6;
+  color: #333;
+}
+
+.card__plan {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  padding: 10px 15px;
+  border-radius: 10px;
+  background-color: hsl(225, 100%, 98%);
+}
+
+.card__plan__type {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.card__plan__price {
+  color: #333;
+}
+
+.card__plan__link {
+  color: hsl(223, 47%, 23%);
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.card__plan__link:hover {
+  color: hsl(224, 23%, 55%);
+}
+
+.card__btn {
+  margin-top: 20px;
+  display: block;
+  width: 100%;
+  padding: 20px 0px;
+  border-radius: 10px;
+  color: white;
+  font-weight: 900;
+  cursor: pointer;
+  background-color: hsl(245, 75%, 52%);
+}
+
+.card__btn:hover {
+  background-color: hsl(223, 47%, 23%);
+}
+
+.card__btn--cancel {
+  display: block;
+  text-decoration: none;
+  color: hsl(224, 23%, 55%);
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-weight: 900;
+}
+
+.card__btn--cancel:hover {
+  color: hsl(223, 47%, 23%);
+}
+
+.attribution {
+  margin-bottom: 20px;
+}
